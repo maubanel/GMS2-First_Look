@@ -182,7 +182,7 @@
 
 
 		<p>
-		The next step is to import a scipt into the script folder.  This script will be full of errors that you can fix.  You will find it in the <tt><b>Included Files | TutorialResources</b></tt> folder.  It is in a folder called scr_resources.  If you have any problems finding this file you can also find it <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/scr_errors">here</a>. Look at the finder or explorer and find out the location of this folder on your computer.
+		The next step is to import a scipt into the script folder.  This script will be full of errors that you can fix.  You will find it in the <tt><b>Included Files | TutorialResources</b></tt> folder.  It is in a folder called scr_errors.  If you have any problems finding this file you can also find it <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/scr_errors">here</a>. Look at the finder or explorer and find out the location of this folder on your computer.
 
 <p>
 	Now <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RMB.png"> right-click on the <tt><b>Scripts</b></tt> header in the <tt><b>Resources</b></tt> folder.  select <tt><b>Add Existing</b></tt> and go to the above folder.  Select the file called <tt><b>scr_errors.yy</b></tt>.  Then double click on this file and you should see a script file with errors in it.
@@ -206,7 +206,7 @@
 
 <p>
 	What does this mean?  We can take:
-	<tt>foo = isntance_create_layer(0, 0, "Instances", obj_circle);</tt>
+	<tt>foo = instance_create_layer(0, 0, "Instances", obj_circle);</tt>
 	
 <p>
 	Now the foo variable holds the reference to the newly created circle.  So we can access foo's variables by putting <tt><b>foo.</b></tt> in front of the variable name.  So if we want to position it's x value we would input <tt><b>foo.x = room_width * .5;</b></tt>.
@@ -230,7 +230,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/InstancesInRoom.png" alt="Instances name should be in parenthesis">
 
 <p>
-	We need to call this script so it runs.  Double click <tt><b>obj_errors_controller</b></tt> and add call this new function:
+	We need to call this script so it runs.  Double click <tt><b>obj_errors_controller</b></tt> and add a new <b>Create Event</b>.  In this new script call this new function:
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/CallScrErrorsScxipt.png" alt="Add new function to draw event">

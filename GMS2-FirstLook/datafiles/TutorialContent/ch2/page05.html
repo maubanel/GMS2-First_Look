@@ -155,7 +155,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/HalfCircleOffScreen.png" alt="Run game and circle is half off screen to the right">		
 
 <p>
-	Go back to <tt><b>obj_circle</b></tt> and adjust its <tt><b>Create</b></tt> script by subtracting <tt><b>sprite_width * .5</b></tt> (same as dividing <tt>sprite_width</tt> by two).  Notice that we put it in parenthesis.  We do not need to do this is because it will do the multiplication BEFORE the subtraction but we are doing it to be clear on what we intend to do.
+	Go back to <tt><b>obj_circle</b></tt> and adjust its <tt><b>Create</b></tt> script by subtracting <tt><b>sprite_width * .5</b></tt> (same as dividing <tt>sprite_get_width(spr_circle)</tt> by two).  Notice that we put it in parenthesis.  We do not need to do this is because it will do the multiplication BEFORE the subtraction but we are doing it to be clear on what we intend to do.
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/SubtractHalfSprite.png" alt="subtract half of the sprite_width for x position of obj_circle">		

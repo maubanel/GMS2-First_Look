@@ -77,7 +77,7 @@
 
 	<div class="note">
 	<p>
-		Note: Please note a consistency here.  We are naming all objects with prefix <tt><b>obj_</b></tt> and all sprites <tt><b>spr_</b></tt>.  This is because we can't have two files with the same name.  We might have various different types of assets with the name circle (for example). This allows us to share a name but not have a problem with collision on two game items with the exact same name.  It also makes it easier to figure out which sprite goes with which objects.  In a small object like this it is simple, but if we had 200 sprites and objects this would be harder to tell without following a consistent naming convetion.
+		Note: Please note a consistency here.  We are naming all objects with prefix <tt><b>obj_</b></tt> and all sprites <tt><b>spr_</b></tt>.  This is because we can't have two files with the same name.  We might have various different types of assets with the name circle (for example). This allows us to share a name but not have a problem with collision on two game items with the exact same name.  It also makes it easier to figure out which sprite goes with which objects.  In a small object like this it is simple, but if we had 200 sprites and objects this would be harder to tell without following a consistent naming convention.
 	</div>
 
 <p>
@@ -93,7 +93,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/ThreeShapesInGameInitial.png" alt="Run the game and three objects not quite positioned properly">	
 
 <p>
-		Now we want the objects to be over the line 25 we have drawin the <tt>obj_data_types_controller</tt> and look to see how many pixels each <tt>line_height</tt> was.  In my case it is <tt>22</tt>.
+		Now we want the objects to be over  line 25 that we have been drawing in the <tt>obj_data_types_controller</tt> object.  Open <tt>obj_data_types_controller</tt> and look to see how many pixels each <tt>line_height</tt> is set to.  In my case it is <tt>22</tt>.
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/WhatLineHeightIsAgain.png" alt="Check value of line_height variable">	
@@ -172,7 +172,7 @@ GameMaker uses an <b><a href="gms2tutorials:///ShowHelp?tag=events">event system
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/ShipTriangleOffscreen.png" alt="Run game and triangle correctly centered based on new origin but off by half a sprite width and height">	
 
 <p>
-	Now we need to compensate for where the sprite's origin is located.  It is located at (32, 32)  which is half the sprite_width.  So we can adjust <tt><b>x</b></tt> to be <tt><b>32</b></tt>.
+	Now we need to compensate for where the sprite's origin is located.  It is located at (32, 32)  which is half the sprite_get_width(spr_circle).  So we can adjust <tt><b>x</b></tt> to be <tt><b>32</b></tt>.
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/MoveXByHalfSprite.png" alt="Adjust for half a sprite width and height">	
@@ -184,7 +184,7 @@ GameMaker uses an <b><a href="gms2tutorials:///ShowHelp?tag=events">event system
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/TriangleProperlyPlaced.png" alt="Run game and triangle is now properly centered">	
 
 <p>
-	What if down the road I wanted to make a change and have the sprite be 32 x 32 pixels.  Then I would have to change this value.  There is a way to not hard code this value and have it change with the <b><a href="gms2tutorials:///ShowHelp?tag=sprite_width"><tt>sprite_width</tt></a></b>.
+	What if down the road I wanted to make a change and have the sprite be 32 x 32 pixels.  Then I would have to change this value.  There is a way to not hard code this value and have it change with the <b><a href="gms2tutorials:///ShowHelp?tag=sprite_get_width"><tt>sprite_get_width</tt></a></b>.
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH2/UseVariableForXPosition.png" alt="Turn this offset into a variable">	

@@ -90,7 +90,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/CircleCenterRoom.png" alt="Run the game circle is in middle of room">
 
 	<p>
-		Press the <tt><b>Add Event</b></tt> button on <tt><b>obj_circle_controller</b></tt> and add a <tt><b>Step | Step</b></tt> event.  Now we will look at <b><a href="gms2tutorials:///ShowHelp?tag=keyboard_check">keyboard_check(key)</a></b> and will subtract the left key from the right key.  Now if you remember <tt><b>keyboard_check(key)</b></tt> returns a boolean which will be 1 if true and 0 if false.  This means if right is pressed it will be 1-0. If left is pressed it will be 0-1.  If both right and left are pressed it will be 1-1.  So this gives us a range of -1 to 1.
+Open up <tt><b>obj_circle_controller</b></tt> and go to the <tt><b>Step </b></tt> event.  Remove the old code. Now we will look at <b><a href="gms2tutorials:///ShowHelp?tag=keyboard_check">keyboard_check(key)</a></b> and will subtract the left key from the right key.  Now if you remember <tt><b>keyboard_check(key)</b></tt> returns a boolean which will be 1 if true and 0 if false.  This means if right is pressed it will be 1-0. If left is pressed it will be 0-1.  If both right and left are pressed it will be 1-1.  So this gives us a range of -1 to 1.
 
 	<p>
 		Lets prove it.  We will do that with another new function <b><a href="gms2tutorials:///ShowHelp?tag=show_debug_message">show_debug_message(string)</a></b>.  It will print this message in the <tt>Debugger Output</tt> window. 
@@ -149,7 +149,7 @@
 		Since the entire level is in this one window we can wrap the player when it goes off screen.  GameMaker has built in functions for a lot of very common game issues and this is one of them.  <b><a href="gms2tutorials:///ShowHelp?tag=move_wrap">move_wrap(hor, vert, margin)</a></b>
 
 	<p>
-		The <tt><b>hor</b></tt> and <tt><b>vert</b></tt> are booleans so you can set it to wrap just vertically or horizontally.  The <tt><b>margin</b></tt> adjusts so that the sprite has to be offscreen by so many pixels.  In our case it is only completely off screen when half the <tt><b>sprite_width</b></tt> is off screen.  
+		The <tt><b>hor</b></tt> and <tt><b>vert</b></tt> are booleans so you can set it to wrap just vertically or horizontally.  The <tt><b>margin</b></tt> adjusts so that the sprite has to be offscreen by so many pixels.  In our case it is only completely off screen when half the <tt><b>sprite_get_width(spr_circle)</b></tt> is off screen.  
 
 	<p>
 		Add the following to <tt><b>obj_circle_movement: Step</b></tt> event script:
