@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"scr_errors","path":"scripts/scr_errors/scr_errors.yy",},"order":0,},
     {"id":{"name":"room0","path":"rooms/room0/room0.yy",},"order":1,},
   ],
   "Options": [
