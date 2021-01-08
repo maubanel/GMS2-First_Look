@@ -90,7 +90,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Intro-To-Game-Maker/CH3/CircleCenterRoom.png" alt="Run the game circle is in middle of room">
 
 	<p>
-Open up <tt><b>obj_circle_controller</b></tt> and go to the <tt><b>Step </b></tt> event.  Remove the old code. Now we will look at <b><a href="gms2tutorials:///ShowHelp?tag=keyboard_check">keyboard_check(key)</a></b> and will subtract the left key from the right key.  Now if you remember <tt><b>keyboard_check(key)</b></tt> returns a boolean which will be 1 if true and 0 if false.  This means if right is pressed it will be 1-0. If left is pressed it will be 0-1.  If both right and left are pressed it will be 1-1.  So this gives us a range of -1 to 1.
+Open up <tt><b>obj_circle_movement</b></tt> and go to the <tt><b>Step </b></tt> event.  Remove the old code. Now we will look at <b><a href="gms2tutorials:///ShowHelp?tag=keyboard_check">keyboard_check(key)</a></b> and will subtract the left key from the right key.  Now if you remember <tt><b>keyboard_check(key)</b></tt> returns a boolean which will be 1 if true and 0 if false.  This means if right is pressed it will be 1-0. If left is pressed it will be 0-1.  If both right and left are pressed it will be 1-1.  So this gives us a range of -1 to 1.
 
 	<p>
 		Lets prove it.  We will do that with another new function <b><a href="gms2tutorials:///ShowHelp?tag=show_debug_message">show_debug_message(string)</a></b>.  It will print this message in the <tt>Debugger Output</tt> window. 
